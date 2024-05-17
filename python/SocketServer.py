@@ -1,5 +1,6 @@
 import socket
 from time import sleep
+
 class SocketServer():
     def __init__(self, host_ip, port) -> None:
         self.host_ip = host_ip
