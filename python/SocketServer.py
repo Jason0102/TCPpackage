@@ -35,7 +35,7 @@ class SocketServer():
                         continue
 
 if __name__ == "__main__":
-    server = SocketServer(host_ip='140.112.14.225', port=12345)
+    server = SocketServer(host_ip='127.0.0.1', port=12345)
     text = server.wait_msg()
     print(text)
     server.send_msg('你好')
