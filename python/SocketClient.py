@@ -24,7 +24,7 @@ class SocketClient():
                 continue
 
 if __name__ == "__main__":
-    client = SocketClient('140.112.14.225', 2468)
+    client = SocketClient('127.0.0.1', 2468)
     text = '佳勳' + '@@' + "我午餐吃了水餃"
     client.send_msg(text)
     print("wait for msg")
