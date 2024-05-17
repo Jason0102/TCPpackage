@@ -1,6 +1,6 @@
 import socket
 from time import sleep
-class socket_server():
+class SocketServer():
     def __init__(self, host_ip, port) -> None:
         self.host_ip = host_ip
         self.port = port
@@ -34,7 +34,7 @@ class socket_server():
                         continue
 
 if __name__ == "__main__":
-    server = socket_server(host_ip='140.112.14.225', port=12345)
-    # text = server.wait_msg()
-    # print(text)
+    server = SocketServer(host_ip='140.112.14.225', port=12345)
+    text = server.wait_msg()
+    print(text)
     server.send_msg('你好')
